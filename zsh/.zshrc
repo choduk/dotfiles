@@ -110,12 +110,3 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-# example
-# $ jdk 1.8
-# $ jdk 11
-jdk() {
-  version=$1
-  export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-  java -version
-}
