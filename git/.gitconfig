@@ -8,11 +8,12 @@
     status = auto
     branch = auto
 [alias]
-    lg = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an]%C(red)%d %C(reset) %s' --all --date=short --graph
-    lgd = log --pretty=format:'%C(yellow)%h %C(bold blue)[%an] %C(red)%d %C(reset)%s %C(green)(%ad)' --all --date=short --graph
-    lgt = log --pretty=format:'%C(yellow)%h %C(bold blue)[%an] %C(red)%d %C(reset)%s %C(blue) %C(green)(%ad)' --all --date=relative --graph
-    today = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an] %C(red)%d %C(reset) %s' --graph --date-order -C -M --all --date=short --since=midnight --graph
-    yesterday = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an] %C(red)%d %C(reset) %s' --graph --date-order -C -M --all --date=short --since=day.before.yesterday.midnight --until=midnight --graph
+    lg = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an]%C(red)%d %C(reset) %s' --date=short --graph
+    lgd = log --pretty=format:'%C(yellow)%h %C(bold blue)[%an] %C(red)%d %C(reset)%s %C(green)(%ad)' --date=short --graph
+    lgt = log --pretty=format:'%C(yellow)%h %C(bold blue)[%an] %C(red)%d %C(reset)%s %C(blue) %C(green)(%ad)' --date=relative --graph
+    today = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an] %C(red)%d %C(reset) %s' --graph --date-order -C -M --date=short --branches --since=midnight --graph
+    yesterday = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an] %C(red)%d %C(reset) %s' --graph --date-order -C -M --date=short --branches --since=day.before.yesterday.midnight --until=midnight --graph
+    lastweek = log --pretty=format:'%C(yellow)%h %C(reset)%ad %C(bold blue)[%an] %C(red)%d %C(reset) %s' --graph --date-order -C -M --date=short --branches --since=1.weeks --until=midnight --graph
 
     s = status -short --branch
     st = status
