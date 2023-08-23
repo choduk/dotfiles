@@ -27,7 +27,6 @@
     cos = checkout sandbox
     com = checkout master
     cod = checkout develop
-    cor = checkout release
 
     cm = commit
     cmm = commit -m
@@ -52,14 +51,6 @@
     psos = push origin sandbox
     psom = push origin master
     psod = push origin develop
-    psor = push origin release
     psoh = push origin HEAD
-
-    fi = flow init
-    fv = flow version
-    ffs = flow feature start
-    fff = flow feature finish
-    fhs = flow hotfix start
-    fhf = flow hotfix finish
 
     as = !git add . && git status
