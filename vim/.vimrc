@@ -1,5 +1,5 @@
 " 모든 옵션 초기화
-set all&
+"set all&
 
 " vim 디폴트
 set nocompatible
